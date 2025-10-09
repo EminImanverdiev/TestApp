@@ -136,11 +136,140 @@
 
 
 
-dynamic name= "Hello, World!";
-name = 234;
+#region Regemlerin cemi
+//int SumDigit(int num)
+//{
+//    int sum = 0;
+//    while (num > 0)
+//    {
+//        int digit = num % 10;
+//        sum += digit;
+//        num /= 10;
+//    }
+//    return sum;
+
+//}
+
+
+
+//int num1 = SumDigit(435);
+//int num2 = SumDigit(12331);
+
+//if (num1>num2)
+//{
+//    Console.WriteLine("");
+//}
+//else
+//{
+//    Console.WriteLine("diger hal");
+//}
+
+
+
+//    Console.WriteLine(SumDigit(143));
+#endregion
 
 
 
 
-Console.WriteLine(name);
+#region Basglanic ve son  
+//int EvenSum(int start, int end)
+//{
+
+//    int sum = 0;
+//    for (int t = start; t < end; t++)
+//    {
+//        if (t % 2 == 0)
+//        {
+//            sum += t;
+//        }
+//    }
+//    return sum;
+//}
+
+
+//Console.WriteLine(EvenSum(1, 5));
+
+
+
+#endregion
+
+
+
+#region Ucbucaq 
+
+
+//void Ucbucaq(int a,int b,int c)
+//{
+//    if (a==b && b==c)
+//    {
+//        Console.WriteLine("Berabertereflidir");
+//    }
+//    else if (a==c || a==b || c==b)
+//    {
+
+//        Console.WriteLine("beraberyanlidir");
+
+//    }
+//    else { Console.WriteLine("Muxteliftereflidir"); }
+//}
+
+
+
+#endregion
+
+#region  Qisa Factorial
+
+
+//int Factorial(int num)
+//{
+//    if(num==0 || num == 1)
+//    {
+//        return 1;
+//    }
+//    return num * Factorial(num-1);
+//}
+
+#endregion
+
+
+
+#region MaxEle
+//int[] numbers = { 21, 414, 21, 31, 14 };
+//int max = numbers[0];
+//for (int i = 0; i < numbers.Length; i++)
+//{
+//    if (numbers[i]>max)
+//    {
+//        max = numbers[i];
+//    }
+
+//}
+//Console.WriteLine(max);
+#endregion
+
+
+
+
+#region Ternary Operator
+
+
+int a = 6;
+int b = 7;
+
+bool IsSUm(int a,int b)
+{
+    if (a>b)
+        return true;
+        return false;
+        return a > b ? true : false;
+
+}
+
+
+
+#endregion
+
+
+
 
