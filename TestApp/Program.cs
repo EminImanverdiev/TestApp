@@ -259,32 +259,31 @@
 
 #region ArraySort
 
-using System.Text;
 
-int[] arr = { 1, 4, 2, 6, 3, 8, 5 };
+//int[] arr = { 1, 4, 2, 6, 3, 8, 5 };
 
-for(int i = 0; i < arr.Length;i++)
-{
-    int minIndex = i;
-    for(int j = i + 1; j < arr.Length; j++)
-    {
-      if (arr[j]<arr[minIndex]){
-                minIndex = j;
-        }
-    }
-    if (minIndex != i)
-    {
-        int temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp;
-    }
+//for(int i = 0; i < arr.Length;i++)
+//{
+//    int minIndex = i;
+//    for(int j = i + 1; j < arr.Length; j++)
+//    {
+//      if (arr[j]<arr[minIndex]){
+//                minIndex = j;
+//        }
+//    }
+//    if (minIndex != i)
+//    {
+//        int temp = arr[i];
+//        arr[i] = arr[minIndex];
+//        arr[minIndex] = temp;
+//    }
 
-}
+//}
 
-foreach (var item in arr)
-{
-    Console.WriteLine(item);
-}
+//foreach (var item in arr)
+//{
+//    Console.WriteLine(item);
+//}
 
 
 #endregion
@@ -611,5 +610,16 @@ foreach (var item in arr)
 
 
 
+#region Array&ArrayMetods
 
+//int[,] ints = new int[3, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
+int[] arr2= (int[])arr.Clone();
+arr[2] = 999;
+
+foreach (var item in arr2)
+{
+    Console.WriteLine(item);
+}
+#endregion
