@@ -612,14 +612,139 @@
 
 #region Array&ArrayMetods
 
-//int[,] ints = new int[3, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
-int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+////int[,] ints = new int[3, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+//int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-int[] arr2= (int[])arr.Clone();
-arr[2] = 999;
+//int[] arr2= (int[])arr.Clone();
+//arr[2] = 999;
 
-foreach (var item in arr2)
+//foreach (var item in arr2)
+//{
+//    Console.WriteLine(item);
+//}
+#endregion
+
+
+#region Random
+
+//Random random = new Random();
+// int secret=  random.Next(1, 16);
+
+//int attempt = 5;
+
+
+//while (attempt > 0)
+//{
+//    Console.WriteLine("Ededinizi daxil edin");
+//    int num = int.Parse(Console.ReadLine());
+//    if (num==secret)
+//    {
+//        Console.WriteLine($"Ugurlu alindi: {num}");
+//        break;  
+//    }
+//    else
+//    {
+//        if (attempt == 1)
+//        {
+//            Console.WriteLine("Cehd sayiniz bitdi");
+//        }
+//        else
+//        {
+
+//            Console.WriteLine("yeniden yazin");
+//        }
+//        attempt--;
+
+//    }
+//}
+
+
+
+
+#endregion
+
+
+
+#region Palindrom 
+
+//int [] arr = { 1, 2, 1, 21, 2, 3, 2, 1 }; 
+
+//bool IsPalindrom(int[] arr)
+//{
+//    for (int i = 0; i < arr.Length / 2; i++)
+//    {
+//        if (arr[i] != arr[arr.Length - 1 - i])
+//        {
+//            return false;
+//        }
+//    }
+//    return true;
+//}
+//Console.WriteLine(IsPalindrom(arr));
+
+
+
+#endregion
+
+
+#region Resize
+//void Resize(ref int[] array, int size)
+//{
+//    int[] newArray = new int[size];
+
+//    if (array != null)
+//    {
+//        if (array.Length < newArray.Length)
+//        {
+//            for (int i = 0; i < array.Length; i++)
+//            {
+//                newArray[i] = array[i];
+//            }
+//        }
+//        else if (array.Length > newArray.Length)
+//        {
+//            for (int i = 0; i < newArray.Length; i++)
+//            {
+//                newArray[i] = array[i];
+//            }
+//        }
+//    }
+//    array = newArray;
+//}
+//int[] arr = { 1, 2, 3, 4, 5 };
+//Resize(ref arr, 28);
+//Console.WriteLine(string.Join(", ", arr));
+#endregion
+
+
+
+
+
+#region ClassvsObject
+
+
+
+
+using TestApp.Models;
+
+namespace HelloWorld
 {
-    Console.WriteLine(item);
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           Person person = new Person("Emin","Imanverdiyev",22);
+
+        }
+    }
+
+
+
+    
+
+
+
+
 }
+
 #endregion
