@@ -609,7 +609,6 @@
 
 
 
-
 #region Array&ArrayMetods
 
 ////int[,] ints = new int[3, 4] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
@@ -663,8 +662,6 @@
 
 #endregion
 
-
-
 #region Palindrom 
 
 //int [] arr = { 1, 2, 1, 21, 2, 3, 2, 1 }; 
@@ -685,8 +682,6 @@
 
 
 #endregion
-
-
 #region Resize
 //void Resize(ref int[] array, int size)
 //{
@@ -717,9 +712,6 @@
 #endregion
 
 
-
-
-
 #region ClassvsObject
 
 
@@ -748,3 +740,14 @@ namespace HelloWorld
 }
 
 #endregion
+
+
+
+
+
+
+
+
+
+
+
